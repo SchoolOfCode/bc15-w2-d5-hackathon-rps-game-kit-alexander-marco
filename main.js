@@ -100,41 +100,42 @@ if (gameType == "1") {
     nameP1 = "Player 1";
     }
     nameP2 = "computer";
-}
 
-//Loop for move/input
-while(true){
+    while(true){
 
-    moveP1 = functionMove(nameP1);
-    // Generate a random decimal number between 0 (inclusive) and 1 (exclusive)
-const randomDecimal = Math.random();
-// Map the random decimal to 1, 2, or 3
-let randomNumber;
-if (randomDecimal < 0.33) {
-  randomNumber = 1;
-} else if (randomDecimal < 0.67) {
-  randomNumber = 2;
-} else {
-  randomNumber = 3;
-}
-    switch(randomNumber) {
-        case 1:
-            moveP2 = "rock";
-            break;
-        case 2: 
-            moveP2 = "paper";
-            break;
-        case 3:
-            moveP2 = "scissors";
-            break;
+        moveP1 = functionMove(nameP1);
+        // Generate a random decimal number between 0 (inclusive) and 1 (exclusive)
+    const randomDecimal = Math.random();
+    // Map the random decimal to 1, 2, or 3
+    let randomNumber;
+    if (randomDecimal < 0.33) {
+      randomNumber = 1;
+    } else if (randomDecimal < 0.67) {
+      randomNumber = 2;
+    } else {
+      randomNumber = 3;
     }
-
-    functionCheck();
-
-    //Ask to continue or not, eventually goes out of the loop move/input
-   let keepPlay = confirm("Do you want to continue?");
-   if(keepPlay === false) break;
-
-
+        switch(randomNumber) {
+            case 1:
+                moveP2 = "rock";
+                break;
+            case 2: 
+                moveP2 = "paper";
+                break;
+            case 3:
+                moveP2 = "scissors";
+                break;
+        }
+    
+        functionCheck();
+    
+        //Ask to continue or not, eventually goes out of the loop move/input
+       let keepPlay = confirm("Do you want to continue?");
+       if(keepPlay === false) break;
+    
+    
+    }
 }
+
+
 
