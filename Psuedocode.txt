@@ -1,0 +1,28 @@
+Prompt for player 1 name 
+Prompt for player 2 name
+Alert for game rules (need decision on keys)
+
+Loop from here: 
+Prompt for player 1 move/input
+Prompt for player 2 move/input
+Function to compare inputs from player 1 and player 2
+    R v R = draw 
+    R v S = R win -> Player 1 win 
+    R v P = P win -> Player 2 win
+
+    S v R = R win -> Player 2 win
+    S v S = draw
+    S v P = S win -> Player 2 win
+
+    P v R = P win -> Player 1 win
+    P v S = S win -> Player 2 win
+    P v P = draw
+
+    (if else)
+
+Alert to display: player inputs, round winner and total score 
+Prompt to ask players whether to continue playing
+    if yes -> continue loop/go back to line 6
+    if no -> exit loop and display final score and thank user
+
+
