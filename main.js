@@ -24,6 +24,9 @@ while(true){
     let moveP1 = prompt(`${nameP1}\nChoose your move`);
     let moveP2 = prompt(`${nameP2}\nChoose your move`);
 
+    moveP1 = moveP1.toLowerCase();
+    moveP2 = moveP2.toLowerCase();
+
     if(moveP1 === "rock" && moveP2 === "scissors" || 
     moveP1 === "scissors" && moveP2 === "paper" ||
     moveP1 === "paper" && moveP2 === "rock") {
