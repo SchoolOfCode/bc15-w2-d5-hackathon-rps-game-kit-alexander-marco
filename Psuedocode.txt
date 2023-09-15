@@ -12,11 +12,24 @@ Function to compare inputs from player 1 and player 2
 
     S v R = R win -> Player 2 win
     S v S = draw
-    S v P = S win -> Player 2 win
+    S v P = S win -> Player 1 win
 
     P v R = P win -> Player 1 win
     P v S = S win -> Player 2 win
     P v P = draw
+
+    Player 1 win:
+        - R v S
+        - S v P
+        - P v R
+    Player 2 win
+        - R v P
+        - S v R
+        - P v S
+    Draw:
+        - R v R
+        - P v P
+        - S v S
 
     (if else)
 
@@ -26,3 +39,7 @@ Prompt to ask players whether to continue playing
     if no -> exit loop and display final score and thank user
 
 
+Code stretch:
+    - check to see in it is insert a correct input
+    - function to put all the caracter of the string low/upper case
+    - confirm between the switch of the 2 players
